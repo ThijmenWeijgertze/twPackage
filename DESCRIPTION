@@ -1,0 +1,20 @@
+Package: twPackage
+Title: Package consisting of 4 functions for a DataScience portofolio
+Version: 1.0.0
+Authors@R: 
+    person("Thijmen", "Weijgertze", , "thijmen.lifesciences@gmail.com", role = c("aut", "cre"))
+Description: The package consists of 4 functions for a DataScience portofolio. "tw_factor" to change a column into a factor. "tw_csv_rds" to export a dataframe/tibble as both an .csv file and .rds file. "tw_table" to make a basic table using the reactable package. "tw_filter_select" to filter rows select columns in one function. The twPackage also contains a pokemon dataset for example purposes.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.2.3
+LazyData: true
+Imports: 
+    here,
+    reactable,
+    readr,
+    dplyr
+Suggests: 
+    knitr,
+    rmarkdown
+VignetteBuilder: knitr

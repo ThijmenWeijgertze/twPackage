@@ -20,5 +20,5 @@
 #' )
 
 tw_filter_select <- function(x, filter_col, filter_value, select) {
- filter(x, pokemon[filter_col]==filter_value) %>% select(select)
+ filter(x, x[filter_col]==filter_value) %>% select(select)
 }

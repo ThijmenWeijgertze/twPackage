@@ -9,9 +9,12 @@
 #' @export
 #'
 #' @examples
-#' # A Rproject must be loaded. The Rproject location is the startpoint. Do not add .csv or .rds at the end of the file name.
-#' library(twPackage)
-#' tw_csv_rds(pokemon, path = "pokemon")
+#' # A Rproject must be loaded.
+#' # The Rproject location is the startpoint.
+#' # Do not add .csv or .rds at the end of the file name.
+#'
+#' # library(twPackage)
+#' # tw_csv_rds(pokemon, path = "pokemon")
 
 tw_csv_rds <- function(x, path) {
   write_csv(

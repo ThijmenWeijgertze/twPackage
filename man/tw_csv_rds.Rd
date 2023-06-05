@@ -18,7 +18,10 @@ A .csv and .tsv from a dataframe or tibble at the chosen location
 Exports a variable containing a dataframe or tibble into a .csv and .rds file at a chosen location. The packages relies on the readr and here package. A project must be loaded in order to make this command work.
 }
 \examples{
-# A Rproject must be loaded. The Rproject location is the startpoint. Do not add .csv or .rds at the end of the file name.
-library(twPackage)
-tw_csv_rds(pokemon, path = "pokemon")
+# A Rproject must be loaded.
+# The Rproject location is the startpoint.
+# Do not add .csv or .rds at the end of the file name.
+
+# library(twPackage)
+# tw_csv_rds(pokemon, path = "pokemon")
 }

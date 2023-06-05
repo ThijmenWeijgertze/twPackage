@@ -3,7 +3,8 @@ knitr::opts_chunk$set(
   collapse = TRUE,
   comment = "#>",
   warning = FALSE,
-  message = FALSE
+  message = FALSE, 
+  error = TRUE
 )
 
 ## ----examples-----------------------------------------------------------------

@@ -13,7 +13,8 @@ Imports:
     here,
     reactable,
     readr,
-    dplyr
+    dplyr,
+    magrittr
 Suggests: 
     knitr,
     rmarkdown

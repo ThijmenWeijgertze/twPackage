@@ -1,28 +1,8 @@
----
-title: "twPackage"
-author: "Author/creator: Thijmen Weijgertze"
-output: rmarkdown::html_vignette
-vignette: >
-  %\VignetteIndexEntry{twPackage}
-  %\VignetteEngine{knitr::rmarkdown}
-  %\VignetteEncoding{UTF-8}
----
-
-```{r, include = FALSE}
-knitr::opts_chunk$set(
-  collapse = TRUE,
-  comment = "#>",
-  warning = FALSE,
-  message = FALSE, 
-  error = TRUE
-)
-```
-
-### Introduction
+# Introduction
 
 The package consists of 4 functions for a DataScience portofolio. The portofolio (in progress) can be found [here](https://thijmenweijgertze.github.io).
 
-### Installation
+# Installation
 
 The package can be installed either via: 
 - devtools::install_github("ThijmenWeijgertze/twPackage")
@@ -39,16 +19,16 @@ Suggested packages:
 - knitr
 - rmarkdown
 
-### Function and data explanation
+# Included functions
 
-tw_factor()
+### tw_factor()
 
 -   description: This command changes a column type to factor with unique levels using the unique() command
 -   usage: tw_factor(x)
 -   x: The column to be changed into a factor
 -   returns: Column with type factor
 
-tw_csv_rds()
+### tw_csv_rds()
 
 -   description: This command exports a variable containing a dataframe or tibble into a .csv and .rds file at a chosen location. The packages relies on the readr and here package. A project must be loaded in order to make this command work
 -   usage: tw_csv_rds(x, path)
@@ -56,14 +36,14 @@ tw_csv_rds()
 -   path The path where the files must be stored. The path must be specified starting at the rproject directory. Do not add .csv or .rds at the end of the file name
 -   returns: A .csv and .tsv from a dataframe or tibble at the chosen location
 
-tw_table()
+### tw_table()
 
 -   description: This command creates a basic table with the reactable package.
 -   usage: tw_table(x)
 -   x: A variable containing a dataframe or tibble
 -   returns: A basic table made with the reactable package
 
-tw_filter_select()
+### tw_filter_select()
 
 -   description: This command creates a basic table with the reactable package.
 -   usage: tw_filter_select(x, filter_col, filter_value, select)
@@ -73,42 +53,42 @@ tw_filter_select()
 -   select: The columns to be selected
 -   returns: A filtered and selected data
 
-Pokemon data
+### Pokemon data
 
 -   description: A dataframe with 800 rows and 13 columns containing pokemon data from around 2016.
 -   usage: pokemon
 -   returns: The pokemon dataset
 -   source: [Pokemon data](https://gist.github.com/armgilles/194bcff35001e7eb53a2a8b441e8b2c6)
 
-### Function examples
+# Function examples
 
-loading package
+### loading package
 
 ```{r examples}
 # load package
 library(twPackage)
 ```
 
-tw_factor()
+### tw_factor()
 
 ```{r}
 pokemon$Type.1 <- tw_factor(pokemon$Type.1)
 levels(pokemon$Type.1)
 ```
 
-tw_csv_rds()
+### tw_csv_rds()
 
 ```{r, eval=FALSE}
 tw_csv_rds(pokemon, path = "pokemon")
 ```
 
-tw_table()
+### tw_table()
 
 ```{r}
 tw_table(pokemon, 5)
 ```
 
-tw_filter_select()
+### tw_filter_select()
 
 ```{r}
 tw_filter_select(
